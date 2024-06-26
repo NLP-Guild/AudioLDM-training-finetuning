@@ -5,7 +5,7 @@ import argparse
 import yaml
 import torch
 
-from utilities.data.dataset import AudioDataset
+from audioldm_train.utilities.data.dataset import AudioDataset
 
 from torch.utils.data import DataLoader
 from pytorch_lightning import seed_everything
