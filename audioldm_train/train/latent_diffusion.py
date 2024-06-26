@@ -97,11 +97,20 @@ def main(configs, config_yaml_path, exp_group_name, exp_name, perform_validation
         limit_val_batches = configs["step"]["limit_val_batches"]
     except:
         limit_val_batches = None
-
+        
+    ##################################################
     validation_every_n_epochs = configs["step"]["validation_every_n_epochs"]
     save_checkpoint_every_n_steps = configs["step"]["save_checkpoint_every_n_steps"]
     max_steps = configs["step"]["max_steps"]
     save_top_k = configs["step"]["save_top_k"]
+
+    print(f"max steps: {max_steps}")
+
+    max_steps = 6400
+    save_checkpoint_every_n_steps = 100
+
+    print(f"max steps: {max_steps}")
+    ##################################################
 
     checkpoint_path = os.path.join(log_path, exp_group_name, exp_name, "checkpoints")
 
