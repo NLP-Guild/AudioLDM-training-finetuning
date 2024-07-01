@@ -1,0 +1,14 @@
+{
+    "audiocaps": "./data/nsynth",
+    "comments": {},
+    "metadata": {
+        "path": {
+            "audiocaps": {
+                "train": "./data/nsynth/nsynth_train_label.json",
+                "test": "./data/nsynth/nsynth_valid_label.json",
+                "val": "./data/nsynth/nsynth_valid_label.json",
+                "class_label_indices": "placeholder"
+            }
+        }
+    }
+}
