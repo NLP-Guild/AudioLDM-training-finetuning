@@ -15,14 +15,14 @@ variables:
   warmup_steps: &warmup_steps 2000
 
 data: 
-  train: ["audiocaps"]
-  val: "audiocaps"
-  test: "audiocaps"
-  class_label_indices: "audioset_eval_subset"
+  train: ["placeholder"]
+  val: "nsynth"
+  test: "nsynth"
+  class_label_indices: "placeholder"
   dataloader_add_ons: [] 
 
 step:
-  validation_every_n_epochs: 5
+  validation_every_n_epochs: 10000000
   save_checkpoint_every_n_steps: 64
   # limit_val_batches: 2
   max_steps: 640
