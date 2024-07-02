@@ -15,10 +15,10 @@ variables:
   warmup_steps: &warmup_steps 2000
 
 data: 
-  train: ["placeholder"]
-  val: "nsynth"
-  test: "nsynth"
-  class_label_indices: "placeholder"
+  train: ["audiocaps"]
+  val: "audiocaps"
+  test: "audiocaps"
+  class_label_indices: "audiocaps"
   dataloader_add_ons: [] 
 
 step:
