@@ -18,7 +18,7 @@ data:
   train: ["audiocaps"]
   val: "audiocaps"
   test: "audiocaps"
-  class_label_indices: "audiocaps"
+  class_label_indices: "audioset_eval_subset"
   dataloader_add_ons: [] 
 
 step:
